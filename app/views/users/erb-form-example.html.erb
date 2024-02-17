@@ -1,0 +1,9 @@
+<%= form_tag('/users', multipart: true) do |f| %>
+  <%= label_tag :user_username, "Username" %>
+  <%= text_field_tag "user[username]" %><br><br>
+  <%= label_tag :user_email, "Email" %>
+  <%= email_field_tag "user[email]" %><br><br>
+  <%= label_tag :user_password, "Password" %>
+  <%= password_field_tag "user[password]" %><br><br>
+  <%= submit_tag "Create" %>
+<% end %>
